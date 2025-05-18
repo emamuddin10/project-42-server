@@ -201,7 +201,7 @@ app.get('/biodata/user/:email', async (req, res) => {
         res.send(result);
       });
 
-
+    // get favourite for one user
       app.get('/favourites/:email', async (req, res) => {
         const email = req.params.email;
         const result = await favouriteCollection.find({ addedBy: email }).toArray();
