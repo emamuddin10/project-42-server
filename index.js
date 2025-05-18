@@ -9,8 +9,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://matrimony-fd8e3.web.app",
-      "https://matrimony-fd8e3.firebaseapp.com",
+      "https://lovely-paprenjak-94e917.netlify.app",
     ],
     credentials: true,
   })
