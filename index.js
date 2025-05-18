@@ -114,7 +114,7 @@ app.get('/biodata/user/:email', async (req, res) => {
 // });
 
 
-    
+    // add biodata
     app.post('/biodata', async (req, res) => {
         const newBiodata = req.body;
   
