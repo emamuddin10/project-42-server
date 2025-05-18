@@ -258,7 +258,7 @@ app.get('/biodata/user/:email', async (req, res) => {
         res.send(result)
       })
 
-      //get user info by email
+      //get user info by email 
       app.get('/user/:email', async(req, res) => {
         const email = req.params.email
         const result = await userCollection.findOne({ email })
