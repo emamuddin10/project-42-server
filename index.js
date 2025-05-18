@@ -266,7 +266,7 @@ app.get('/biodata/user/:email', async (req, res) => {
       })
 
 
-      //search
+      //search query
       app.get('/users/search', async (req, res) => {
         const name = req.query.name;
         const query = { name: { $regex: name, $options: 'i' } }; // Case-insensitive search
