@@ -216,7 +216,7 @@ app.get('/biodata/user/:email', async (req, res) => {
         res.send(result);
       })
 
-      // marriage
+      // marriage api 
       app.post('/marriage', async(req,res) =>{
         const newMarriage =req.body;
         console.log(newMarriage);
