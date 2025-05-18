@@ -281,7 +281,7 @@ app.get('/biodata/user/:email', async (req, res) => {
       });
       
 
-      //get all user data
+      //get all user data using get api
       app.get('/users', async (req, res) => {
         const result = await userCollection.find().toArray()
         res.send(result)
