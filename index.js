@@ -189,6 +189,7 @@ app.get('/biodata/user/:email', async (req, res) => {
       //   res.send(result);
       // });
 
+    //   create favourite api
       app.post('/favourite', async (req, res) => {
         const { favouriteData, userEmail } = req.body;
         const { _id, ...favouriteDataWithoutId } = favouriteData; // Exclude the _id field
