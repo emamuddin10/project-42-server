@@ -133,7 +133,7 @@ app.get('/biodata/user/:email', async (req, res) => {
         res.send(result);
       });
 
-    //   get specific biodata
+    //   get specific biodata for update
       app.put('/biodata/:id', async(req, res) =>{
         const id = req.params.id;
         const filter = {_id: new ObjectId(id)}
