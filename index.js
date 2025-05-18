@@ -228,7 +228,7 @@ app.get('/biodata/user/:email', async (req, res) => {
         res.send(result)
       });
 
-      // save a user
+      // save a user in db
       app.put('/user', async(req,res) => {
         const user = req.body
         console.log(user);
