@@ -207,7 +207,8 @@ app.get('/biodata/user/:email', async (req, res) => {
         const result = await favouriteCollection.find({ addedBy: email }).toArray();
         res.send(result);
       });
-
+      
+    //   delete favourite
       app.delete('/favourite/:id',async(req, res) =>{
         const id = req.params.id;
         const query = { _id: new ObjectId(id)}
